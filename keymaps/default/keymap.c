@@ -24,3 +24,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LCTL,      KC_LGUI,  KC_ESC,     KC_BSPC,    KC_TAB,             KC_ENT,   KC_SPC,     KC_DEL,   KC_LALT, QK_BOOT
   )
 };
+
+#define LED1 D7
+#define LED2 B0
+void keyboard_post_init_user(void) {
+  // Call the post init code.
+  writePinHigh(LED1);
+  writePinHigh(LED2);
+}
