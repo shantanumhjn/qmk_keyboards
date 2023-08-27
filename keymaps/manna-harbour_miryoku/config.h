@@ -16,4 +16,9 @@ K20,  K21,  K22,  K23,  K24,    K25,  K26,  K27,  K28,  K29, \
 XXX,  XXX,  K32,  K33,  K34,    K35,  K36,  K37,  XXX,  XXX  \
 )
 
-#define U_LED_TIMER_MS 500
+#define U_POWER_LED_ON_INTERVAL 200
+#define U_POWER_LED_OFF_INTERVAL 1800
+#define U_KEYSTROKE_LED_ON_INTERVAL 500
+
+#define RGBLIGHT_SLEEP
+#define RGBLIGHT_TIMEOUT 600000     // ms to wait until rgblight time out, 600 secs or 10 minutes
