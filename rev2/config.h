@@ -50,12 +50,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define DIODE_DIRECTION COL2ROW
 
 // The pin connected to the data pin of the LEDs
-#define RGB_DI_PIN E2
+#define WS2812_DI_PIN E2
 // The number of LEDs connected
 #define DRIVER_LED_TOTAL 73
-#ifdef RGB_DI_PIN
+#ifdef WS2812_DI_PIN
     #define RGBLED_NUM 6
     #define RGB_MATRIX_KEYPRESSES // reacts to keypresses
+    #define RGB_MATRIX_FRAMEBUFFER_EFFECTS  // wpm and digital rain
 #endif
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
@@ -181,3 +182,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENABLE_RGB_MATRIX_MULTISPLASH
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
+
