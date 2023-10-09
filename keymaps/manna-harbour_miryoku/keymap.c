@@ -42,18 +42,17 @@ void handle_led_animation(void) {
       }
     }
 
+    // check caps word and caps lock states
+    writePin(U_KEYSTROKE_LED, is_caps_word_on() || host_keyboard_led_state().caps_lock);
+
 #ifdef RGBLIGHT_TIMEOUT
     // completely shutoff the led during inactivity
     if (timer_elapsed32(keystroke_timer) > RGBLIGHT_TIMEOUT) {
       writePinLow(U_POWER_LED);
+      writePinLow(U_KEYSTROKE_LED);
       is_rgb_timeout = true;
     }
 #endif // RGBLIGHT_TIMEOUT
-  }
-
-  // turn off keystroke led
-  if (timer_elapsed32(keystroke_timer) > U_KEYSTROKE_LED_ON_INTERVAL) {
-    writePinLow(U_KEYSTROKE_LED);
   }
 }
 
@@ -66,7 +65,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (record->event.pressed) {
     keystroke_timer = timer_read32();
     is_rgb_timeout = false;
-    writePinHigh(U_KEYSTROKE_LED);
   }
 
   return true;
