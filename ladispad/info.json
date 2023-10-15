@@ -1,0 +1,44 @@
+{
+    "keyboard": "LadisPad",
+    "manufacturer": "Pelican",
+    "maintainer": "Pelican",
+    "url": "https://github.com/ajmandourah/Ladispad",
+    "processor": "atmega32u4",
+    "bootloader": "caterina",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0x6060",
+        "device_version": "1.0.0"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "K00", "x": 0, "y": 0},
+                {"label": "K01", "x": 1, "y": 0},
+                {"label": "K02", "x": 2, "y": 0},
+                {"label": "K03", "x": 3, "y": 0},
+                {"label": "K04", "x": 4, "y": 0},
+                {"label": "K05", "x": 5, "y": 0},
+                {"label": "K06", "x": 6, "y": 0},
+                {"label": "K07", "x": 7, "y": 0},
+                {"label": "K08", "x": 8, "y": 0},
+                {"label": "E01", "x": 9, "y": 0},
+                {"label": "E02", "x": 10, "y": 0}
+            ]
+        }
+    },
+    "matrix_pins": {
+        "direct": [
+            ["D3", "B1", "D4", "C6", "D7", "E6", "B4", "B5", "F4", "F7", "B3"]
+        ]
+    },
+    "features": {
+        "encoder": true
+    },
+    "encoder": {
+        "rotary": [
+            {"pin_a": "F5", "pin_b": "F6"},
+            {"pin_a": "B6", "pin_b": "B2"}
+        ]
+    }
+}
