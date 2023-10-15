@@ -1,2 +1,2 @@
 # compile
-    qmk compile -c -kb ladispad -km default
+    qmk compile -c -kb shantanumhjn/ladispad -km default
