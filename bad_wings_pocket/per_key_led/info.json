@@ -1,0 +1,33 @@
+{
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "rgb_matrix": false,
+        "rgblight": true
+    },
+    "rgblight": {
+        "led_count": 36,
+        "animations": {
+            "breathing": true,
+            "rainbow_mood": true,
+            "raindow_swirl": true,
+            "snake": true,
+            "knight": true,
+            "christmas": true,
+            "static_gradient": true,
+            "rgb_test": true,
+            "alternating": true,
+            "twinkle": true
+        },
+        "driver": "ws2812",
+        "sleep": true
+    },
+    "ws2812": {
+        "driver": "bitbang",
+        "pin": "F4"
+    }
+}
