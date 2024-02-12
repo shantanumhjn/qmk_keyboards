@@ -13,8 +13,8 @@
         "led_count": 36,
         "animations": {
             "breathing": true,
-            "rainbow_mood": true,
-            "raindow_swirl": true,
+            "rainbow_mood": false,
+            "rainbow_swirl": false,
             "snake": true,
             "knight": true,
             "christmas": true,
