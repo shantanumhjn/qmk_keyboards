@@ -10,4 +10,4 @@ no default keymap available
     qmk compile -c -kb shantanumhjn/skeletyl/single_mcu -km default
 
 ### miryoku
-    qmk compile -c -kb shantanumhjn/skeletyl/single_mcu -km manna-harbour_miryoku -e MIRYOKU_TAP=QWERTY
+    qmk compile -c -kb shantanumhjn/skeletyl/single_mcu -km miryoku -e MIRYOKU_TAP=QWERTY
